@@ -1,0 +1,1175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+}
+
+
+
+/*Header Section*/
+
+body {
+  background-image: url("https://user-images.githubusercontent.com/70689572/161000479-7778d3ef-9a66-43d7-9355-626a6d48079d.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  flex-grow: 1;
+}
+
+.hcontainer {
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+  border: none;
+  flex: 0 0 100%;
+}
+
+.logoholder {
+  margin: 20px 20px;
+  width: 45%;
+  border: none;
+}
+
+#logo {
+  width: 10rem;
+  height: auto;
+}
+
+/* general container for navigation */
+.allmenu { 
+  width: 55%;
+  height: auto;
+  display: grid;
+  
+}
+
+/* container for the container with first four navigation */
+
+.topmenu {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  justify-content: flex-end;
+  justify-items: baseline;
+  align-items: flex-end;
+}
+
+/*container with first four nav elements */ 
+.intopmenu {
+  display: flex;
+  width: 20rem;
+  margin: 0px 25px;
+  justify-content: space-between;
+}
+
+/* first navigation elements */
+.firstmenu {
+  display: inline-flex;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: darkgreen;
+  color: white;
+}
+
+.firstmenu:hover {
+  background-color: green;
+  font-weight: bold;
+}
+
+/* container for the container with second two navigation */
+.undermenu {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+/*container with second two nav elements */ 
+.insecondmenu {
+  display: inline-flex;
+  width: 20rem;
+  margin: 5px 25px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/* second navigation elements */
+.secondmenu {
+  display: inline-flex;
+  height: max-content;
+  width: 8.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: darkgreen;
+  color: white;
+  align-content: center;
+  justify-content: center;
+}
+
+.secondmenu:hover {
+  background-color: green;
+  font-weight: bold;
+}
+
+
+/* MAIN section */
+
+/* Banner main container sized full-size for other inner containers*/
+.banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  border: none;
+  flex: 0 0 100%;
+}
+
+/* A canvas, holder of picture container */
+
+.canvas {
+  width: 70%;
+  height: 400px;
+  border: none;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family:'Courgette', cursive;
+  flex: 0 0 100%;
+  }
+
+/* Picture container */
+
+.picture {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://user-images.githubusercontent.com/70689572/161013305-b30ebf29-d9b2-42e5-8aa7-c33daff4cb4a.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  opacity: 0.9;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 0 0 100%;
+}
+
+.picture #dreamtext {
+  margin: 20px 20px;
+  text-shadow: 2px 2px 8px #084724;
+  
+}
+
+/* Main article container sized full-size for other inner containers*/
+.artcontainer {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  border: none;
+}
+
+/* container with articles inside */
+
+.artbox {
+  width: 60%;
+  height: 250px;
+  border: none;
+  background-color: white;
+  display: block;
+  justify-content:space-between;
+  align-items: center;
+  align-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.9;
+}
+
+/* Gradient line with the name of section */
+.paragraphs {
+  width: auto;
+  height: 7%;
+  background-image: linear-gradient(to right, darkgreen, lightgreen);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 500;
+  padding: 3px 0px 5px 15px;
+}
+
+/* container with artcile holder */
+.artholder {
+  width: 100%;
+  height: 90%;
+  background-color: yellowgreen;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: space-around;    
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  width: 23%;
+  height: 90%;
+  background-color: aliceblue;
+  margin-bottom: 0.5rem;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;  
+}
+
+.topic {
+  height: fit-content;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 505;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.photage {
+  width: 90%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.lead {
+  display: flex;
+  width: 90%;
+  height: auto;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-align: justify;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center; 
+  padding-bottom: 1rem; 
+}
+
+.lead a {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* section with Tips and Who we are boxes */
+
+/* container for two boxes: Tips and Who we are */
+.boxholder {
+  display: inline-flex;
+  width: 60%;
+  height: auto;
+  border: none;
+  justify-content: space-between;
+  background-color: none;
+}
+
+/* class for each box */
+.twobox {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 100%;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* name of section as a grdient arrow */
+.pagename {
+  width: auto;
+  height: fit-content;
+  background-image: linear-gradient(to right, darkgreen, lightgreen);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 500;
+  padding: 3px 0px 5px 15px;
+}
+
+/* articles with tips */
+.tipbox {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: yellowgreen;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+/* small boxes inside tipbox */
+.tipdrops {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  width: 48%;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: aliceblue;  
+}
+
+/* Games section */
+
+.gameholder {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 90%;
+  border: none;
+  justify-content: space-between;
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gamename {
+  width: auto;
+  height: fit-content;
+  background-image: linear-gradient(to right, darkgreen, lightgreen);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 500;
+  padding: 3px 0px 5px 15px;
+}
+
+.gamebox {
+  width: 100%;
+  height: 90%;
+  display: inline-flex;
+  border: none;
+}
+
+.gamephoto {
+  width: 30%;
+  height: 100%;
+  border: none;
+  padding: 0.3rem;
+}
+
+.gametext {
+  width: 69%;
+  height: auto;
+  padding-left: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.gametext h6 {
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.gametext p {
+  text-align: justify;
+}
+
+.gametext a {
+  text-decoration: underline;
+  color: blue;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 3rem;
+  padding: 3rem;
+  background-color: darkgreen;
+  color: white;
+}
+
+#home {
+  color: white;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+#home a {
+  color: white;
+}
+
+/* Mediaquaries for small screens and tablets*/
+
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+
+  html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+  }
+
+  body {
+    background-color: none;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1;
+    flex: auto;
+  }
+  .hcontainer {
+    display: flex;;
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .logoholder {
+    margin: 10px 10px;
+    width: 45%;
+    border: none;
+  }
+
+  #logo {
+   width: 40%;
+   height: auto;
+  }
+
+  /* general container for navigation */
+  .allmenu { 
+     width: 60%;
+    height: auto;
+    display: grid;
+   }
+
+  /* container for the container with first four navigation */
+
+  .topmenu {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: flex-end;
+    justify-items: baseline;
+    align-items: flex-end;
+  }
+
+  /*container with first four nav elements */ 
+    .intopmenu {
+      display: flex;
+      width: 20rem;
+      margin: 0% 10%;
+      justify-content: space-between;
+  }
+
+  /* first navigation elements */
+  .firstmenu {
+    display: inline-flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: darkgreen;
+    color: white;
+  }
+
+  .firstmenu:hover {
+    background-color: green;
+    font-weight: bold;
+  }
+
+  /* container for the container with second two navigation */
+  .undermenu {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+
+  /*container with second two nav elements */ 
+  .insecondmenu {
+    display: inline-flex;
+    width: 20rem;
+    margin: 5px 10%;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  /* second navigation elements */
+  .secondmenu {
+    display: inline-flex;
+    height: max-content;
+    width: 8.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: darkgreen;
+    color: white;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .secondmenu:hover {
+    background-color: green;
+    font-weight: bold;
+  }
+
+
+  /* MAIN section */
+
+  /* Banner main container sized full-size for other inner containers*/
+  .banner {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    border: none;
+  }
+
+  /* A canvas, holder of picture container */
+
+  .canvas {
+    width: 70%;
+    height: 400px;
+    border: none;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Courgette', cursive;
+    flex: 0 0 100%;
+    }
+
+  /* Picture container */
+
+  .picture {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://user-images.githubusercontent.com/70689572/161013305-b30ebf29-d9b2-42e5-8aa7-c33daff4cb4a.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.9;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 0 0 100%;
+  }
+
+  .picture #dreamtext {
+    margin: 20px 20px;
+    text-shadow: 2px 2px 8px #084724;
+  }
+
+  /* Main article container sized full-size for other inner containers*/
+  .artcontainer {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    border: none;
+  }
+
+/* container with articles inside */
+
+  .artbox {
+    width: 60%;
+    height: auto;
+    border: none;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: stretch;
+    align-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+  }
+
+  /* Gradient line with the name of section */
+  .paragraphs {
+    width: auto;
+    height: fit-content;
+    background-image: linear-gradient(to right, darkgreen, lightgreen);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding: 3px 0px 5px 15px;
+  }
+
+  /* container with artcile holder */
+  .artholder {
+    width: 100%;
+    height: auto;
+    background-color: yellowgreen;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    width: 50%;
+    height: 50%;
+    background-color: aliceblue;
+    margin-bottom: 0.5rem;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.5;  
+  }
+
+  .topic {
+    text-decoration: underline;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+
+
+  /* section with Tips and Who we are boxes */
+
+  /* container for two boxes: Tips and Who we are */
+  .boxholder {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    border: none;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* class for each box */
+  .twobox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    border: none;
+    margin-bottom: 1%;  
+  }
+
+  /* name of section as a grdient arrow */
+  .pagename {
+    width: auto;
+    height: fit-content;
+    background-image: linear-gradient(to right, darkgreen, lightgreen);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding: 3px 0px 5px 15px;
+  }
+
+  /* articles with tips */
+  .tipbox {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: yellowgreen;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  /* small boxes inside tipbox */
+  .tipdrops {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 48%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: aliceblue;
+    line-height: 1.5;  
+  }
+
+  /* Games section */
+
+  .gameholder {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    border: none;
+    justify-content: space-between;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .gamename {
+    width: auto;
+    height: fit-content;
+    background-image: linear-gradient(to right, darkgreen, lightgreen);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding: 3px 0px 5px 15px;
+  }
+
+  .gamebox {
+    width: 100%;
+    height: 90%;
+    display: inline-flex;
+    flex-direction: column;
+    border: none;
+    align-content: center;
+    align-items: center;
+  }
+
+  .gamephoto {
+    width: 90%;
+    height: 100%;
+    border: none;
+  }
+
+  .gametext {
+    width: 90%;
+    height: auto;
+    padding-left: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .gametext h6 {
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+
+  .gametext p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: darkgreen;
+    color: white;
+  }
+
+}
+
+  /* Mediaquaries for smartphones*/
+
+  @media only screen and (max-width: 399px) {
+
+  html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+  }
+
+  body {
+    background-color: none;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1;
+    flex: auto;
+  }
+  .hcontainer {
+    display: flex;;
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .logoholder {
+    margin: 10px 10px;
+    width: 45%;
+    border: none;
+    display: none;
+  }
+
+  #logo {
+   width: 40%;
+   height: auto;
+   display: none;
+  }
+
+  /* general container for navigation */
+  .allmenu { 
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  /* container for the container with first four navigation */
+
+  .topmenu {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 3%;
+  }
+
+/*container with first four nav elements */ 
+  .intopmenu {
+    display: flex;
+    width: auto;
+    margin: 0% 0%;
+    justify-content: space-around;
+    padding: 2% 1%;
+  }
+
+  /* first navigation elements */
+  .firstmenu {
+    display: inline-flex;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    padding: 3% 5%;
+    background-color: darkgreen;
+    color: white;
+    margin: 0% 3%;
+  }
+
+  .firstmenu:hover {
+    background-color: green;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* container for the container with second two navigation */
+  .undermenu {
+    width: 99%;
+    height: auto;
+    display: inline-flex;
+    justify-content:center;
+  }
+
+  /*container with second two nav elements */ 
+  .insecondmenu {
+    display: inline-flex;
+    width: 100%;
+    margin: 0 0;
+    justify-content: center;
+    align-content: none;
+  }
+
+  /* second navigation elements */
+  .secondmenu {
+    display: inline-flex;
+    height: max-content;
+    width: auto;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: darkgreen;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    margin: 0 3%;
+  }
+
+  .secondmenu:hover {
+    background-color: green;
+    font-weight: bold;
+  }
+
+
+  /* MAIN section */
+
+  /* Main article container sized full-size for other inner containers*/
+  .artcontainer {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    border: none;
+  }
+
+  /* container with articles inside */
+
+  .artbox {
+    width: 99%;
+    height: auto;
+    border: none;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: stretch;
+    align-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+  }
+
+  /* Gradient line with the name of section */
+  .paragraphs {
+    width: auto;
+    height: fit-content;
+    background-image: linear-gradient(to right, darkgreen, lightgreen);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding: 3px 0px 5px 15px;
+  }
+
+  /* container with artcile holder */
+  .artholder {
+    width: 100%;
+    height: auto;
+    background-color: yellowgreen;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    width: 50%;
+    height: 50%;
+    background-color: aliceblue;
+    margin-bottom: 0.5rem;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.5;  
+  }
+
+  .topic {
+    text-decoration: underline;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+
+
+  /* section with Tips and Who we are boxes */
+
+  /* container for two boxes: Tips and Who we are */
+  .boxholder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: none;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* class for each box */
+  .twobox {
+    display: flex;
+    flex-direction: column;
+    width: 99.5%;
+    height: 95%;
+    border: none;
+    margin-bottom: 1%;  
+  }
+
+  /* name of section as a grdient arrow */
+  .pagename {
+    width: auto;
+    height: fit-content;
+    background-image: linear-gradient(to right, darkgreen, lightgreen);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding: 3px 0px 5px 15px;
+  }
+
+  /* articles with tips */
+  .tipbox {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: yellowgreen;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  /* small boxes inside tipbox */
+  .tipdrops {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 48%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: aliceblue;
+    line-height: 1.5;  
+  }
+
+  /* Games section */
+
+  .gameholder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    border: none;
+    justify-content: space-between;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .gamename {
+    width: auto;
+    height: fit-content;
+    background-image: linear-gradient(to right, darkgreen, lightgreen);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding: 3px 0px 5px 15px;
+  }
+
+  .gamebox {
+    width: 99%;
+    height: 90%;
+    display: inline-flex;
+    flex-direction: column;
+    border: none;
+    align-content: center;
+    align-items: center;
+  }
+
+  .gamephoto {
+    width: 90%;
+    height: 100%;
+    border: none;
+  }
+
+  .gametext {
+    width: 90%;
+    height: auto;
+    padding-left: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .gametext h6 {
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+
+  .gametext p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: darkgreen;
+    color: white;
+  }
+
+  footer a {
+    display: none;
+  }
+
+
+
+
+
+} /* End */
